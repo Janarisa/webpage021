@@ -139,7 +139,7 @@ body {
   width: 400px;
   height: 200px;
 
-  border: 2px solid rgb(255, 145, 197);
+  border: 2px solid #ff91c5;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgb(121, 74, 74);
 
@@ -259,11 +259,116 @@ body {
 /*-----------------------------------------*/
 /* right sidebar */
 .right-sidebar {
-  border: 1px solid rgb(72, 255, 0);
+  /*border: 1px solid rgb(72, 255, 0);*/
   padding: 15px;
   margin: 15px;
 }
 .side-card {
+  background-color: #ffffff;
+  border: 1px solid #888888;
+  border-radius: 15px;
+
+  padding: 10px 15px;
+  margin-top: 20px;
+}
+
+.sidecard-header{
+  color: #50402b;
+}
+.sidecard-body{
+  display: grid;
+  grid-template-columns: 10% 90%;
+  gap: 10px;
+
+  font-size: 16px;
+  align-items: center;
+  padding: 6px;
+}
+.sidecard-body pink-btn{
+  font-size: 22px;
+}
+.pink-btn{
+  background-color: #ff74f3;
+  border-radius: 50%; 
+  color: white;
+
+  align-items: center;
+  text-align: center;
+
+  width: 28px;
+  height: 28px;
+}
+.btn{
+  border-radius: 50%; 
+  color: white;
+
+  align-items: center;
+  text-align: center;
+
+  width: 28px;
+  height: 28px;
+}
+.pink{
+  background-color: #ff91c5;
+}
+.blue{
+  background-color: #6e8dec;
+}
+.green{
+  background-color: #3aae6a;
+}
+.orange{
+  background-color: #e78441;
+}
+.purple{
+  background-color: #bf55da;
+}
+.mint{
+  background-color: #33f3b6;
+}
+.sidebody-box{
+  display: grid;
+  grid-template-columns: repeat(4 ,1fr);
+  gap: 10px;
+
+  align-items: center;
+  text-align: center;
+}
+.body-box{
+  padding: 10px;
+  border-radius: 15px;
+}
+.blue-box{
+  background-color: #3300ff36;
+  color: #090b52;
+}
+.sky-box{
+  background-color: #3b93da36;
+  color: #455ea9;
+}
+.green-box{
+  background-color: #07ff6f36;
+  color: #027e23;
+}
+.orange-box{
+  background-color: #ffb00736;
+  color: #dc691b;
+}
+.purple-box{
+  background-color: #9c07ff36;
+  color: #69197e;
+}
+.pink-box{
+  background-color: #ff07e636;
+  color: #7e024c;
+}
+.mint-box{
+  background-color: #07ffb036;
+  color: #027e57;
+}
+.yellow-box{
+  background-color: #d6ff0736;
+  color: #9ba41d;
 }
 .submit-card {
 }
