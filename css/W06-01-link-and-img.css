@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Mitr";
   background-color: rgb(255, 226, 250);
@@ -30,6 +31,7 @@ body {
 
   padding: 8px 20px;
 }
+
 /* ------Brand Logo------ */
 .brand {
   /* border: 1px solid rgb(0, 102, 255); */
@@ -42,6 +44,7 @@ body {
 
   color: white;
 }
+
 .brand-logo {
   background-color: #fdf6d0;
   border-radius: 10px;
@@ -55,9 +58,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .brand-text h2 {
   font-size: 20px;
 }
+
 .brand-text p {
   font-size: 14px;
   opacity: 0.5;
@@ -70,6 +75,7 @@ body {
   padding: 15px;
   margin: 15px; */
 }
+
 .nav-list {
   list-style: none;
 
@@ -78,6 +84,7 @@ body {
   align-items: center;
   gap: 20px;
 }
+
 .nav-list li a {
   color: white;
   text-decoration: none;
@@ -87,6 +94,7 @@ body {
 
   transition: 0.9s;
 }
+
 .nav-list li a:hover {
   background-color: #ffabed85;
 }
@@ -97,18 +105,21 @@ body {
 .main-layout {
   /* border: 1px solid red;
   padding: 15px;
-  margin: 15px; */
+  margin: 20px; */
 
   display: grid;
-  grid-template-columns: 1fr 390px;
+  grid-template-columns: 80% 20%;
   padding: 20px 22px;
+  gap: 15px;
 }
+
 /* left content */
 .left-content {
   /* border: 1px solid rgb(72, 255, 0);
   padding: 15px;
   margin: 15px; */
 }
+
 .hero {
   /* border: 1px solid rgb(72, 255, 0);
   margin: 15px;*/
@@ -124,11 +135,13 @@ body {
 
   align-items: center;
 }
+
 .hero-text h1 {
   font-size: 30px;
   color: #50402b;
   line-height: 1.5;
 }
+
 .hero-text p {
   font-size: 21px;
   color: rgb(87, 75, 59);
@@ -156,7 +169,7 @@ body {
   border-radius: 15px;
   background-color: white;
 
-  margin-top: 20px;
+  margin-top: 40px;
 
   border-radius: 30px;
   box-shadow: 0 4px 8px rgb(124, 120, 99);
@@ -165,41 +178,50 @@ body {
 
 /*Link Example*/
 /*card1 link*/
-.card-header-title {
-}
+.card-header-title {}
+
 .card-header-title h2 {
   color: #50402b;
 }
+
 .card-body-grid {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
   gap: 15px;
 }
+
 /*กล่องซ้าย*/
-.result-panel,.code-panel {
+.result-panel,
+.code-panel {
   border: 1px solid #888888;
   border-radius: 15px;
   overflow: hidden;
 }
 
 /*เนื้อหากล่องซ้าย*/
-.panel-header,.code-panel-header {
+.panel-header,
+.code-panel-header {
   background-color: #fdf6d0;
   color: #50402b;
   font-weight: bold;
   padding: 0px 20px;
 }
-.panel-body ,.code-panel-body{
+
+.panel-body,
+.code-panel-body {
   padding: 5px 20px 10px 20px;
   line-height: 2;
 }
+
 .panel-body a {
   display: block;
   color: #50402b;
 }
+
 .panel-body a:hover {
   color: red;
 }
+
 .back-btn {
   display: inline-block !important;
 
@@ -208,16 +230,18 @@ body {
   padding: 0px 15px;
   text-decoration: none;
 }
+
 .mail-btn {
   background-color: #50402b;
   border-radius: 5px;
   weight: 24px;
   height: 24px;
 }
+
 /*card2 image*/
-.body-grid{
+.body-grid {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
 
   padding: 10px 0;
@@ -234,23 +258,30 @@ body {
   background-color: #3d3d3d;
   font-size: 14px;
 }
-.code-list{
+
+.code-list {
   padding: 10px 40px;
 }
-.code-list li{
+
+.code-list li {
   padding: 0 20px;
 }
-.code-panel-header{}
-.code-panel-body{
+
+.code-panel-header {}
+
+.code-panel-body {
   color: #ffffff;
 }
-.tag{
+
+.tag {
   color: #ff0000;
 }
-.attr{
+
+.attr {
   color: #e7f338;
 }
-.value{
+
+.value {
   color: #38f370;
 }
 
@@ -259,10 +290,15 @@ body {
 /*-----------------------------------------*/
 /* right sidebar */
 .right-sidebar {
-  /*border: 1px solid rgb(72, 255, 0);*/
-  padding: 15px;
-  margin: 15px;
+  /* border: 1px solid rgb(72, 255, 0); */
+  /* padding: 0 0 0 20px;
+  margin: 15px; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
+
 .side-card {
   background-color: #ffffff;
   border: 1px solid #888888;
@@ -272,10 +308,11 @@ body {
   margin-top: 20px;
 }
 
-.sidecard-header{
+.sidecard-header {
   color: #50402b;
 }
-.sidecard-body{
+
+.sidecard-body {
   display: grid;
   grid-template-columns: 10% 90%;
   gap: 10px;
@@ -284,12 +321,14 @@ body {
   align-items: center;
   padding: 6px;
 }
-.sidecard-body pink-btn{
+
+.sidecard-body pink-btn {
   font-size: 22px;
 }
-.pink-btn{
+
+.pink-btn {
   background-color: #ff74f3;
-  border-radius: 50%; 
+  border-radius: 50%;
   color: white;
 
   align-items: center;
@@ -298,8 +337,9 @@ body {
   width: 28px;
   height: 28px;
 }
-.btn{
-  border-radius: 50%; 
+
+.btn {
+  border-radius: 50%;
   color: white;
 
   align-items: center;
@@ -308,76 +348,240 @@ body {
   width: 28px;
   height: 28px;
 }
-.pink{
+
+.pink {
   background-color: #ff91c5;
 }
-.blue{
+
+.blue {
   background-color: #6e8dec;
 }
-.green{
+
+.green {
   background-color: #3aae6a;
 }
-.orange{
+
+.orange {
   background-color: #e78441;
 }
-.purple{
+
+.purple {
   background-color: #bf55da;
 }
-.mint{
+
+.mint {
   background-color: #33f3b6;
 }
-.sidebody-box{
+
+.sidebody-box {
   display: grid;
-  grid-template-columns: repeat(4 ,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 
   align-items: center;
   text-align: center;
 }
-.body-box{
+
+.body-box {
   padding: 10px;
   border-radius: 15px;
 }
-.blue-box{
+
+.blue-box {
   background-color: #3300ff36;
   color: #090b52;
 }
-.sky-box{
+
+.sky-box {
   background-color: #3b93da36;
   color: #455ea9;
 }
-.green-box{
+
+.green-box {
   background-color: #07ff6f36;
   color: #027e23;
 }
-.orange-box{
+
+.orange-box {
   background-color: #ffb00736;
   color: #dc691b;
 }
-.purple-box{
+
+.purple-box {
   background-color: #9c07ff36;
   color: #69197e;
 }
-.pink-box{
+
+.pink-box {
   background-color: #ff07e636;
   color: #7e024c;
 }
-.mint-box{
+
+.mint-box {
   background-color: #07ffb036;
   color: #027e57;
 }
-.yellow-box{
+
+.yellow-box {
   background-color: #d6ff0736;
   color: #9ba41d;
 }
+
+/* -----------Submit Card------------ */
 .submit-card {
+  background-color: #fdf6d0;
+  border: 1px solid #888888;
+  border-radius: 15px;
+
+  padding: 10px 15px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
+
+.submit-logo {
+  font-size: 36px;
+  text-align: center;
+}
+
 /* ---------------------------------------------------
                   Footer Section
 --------------------------------------------------- */
 
 .tip-box {
-  border: 1px solid red;
-  padding: 15px;
+  background-color: #fdf6d0;
+  border: 1px solid rgb(73, 56, 142);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgb(124, 120, 99);
+
+  padding: 10px;
   margin: 15px;
+
+  display: flex;
+  gap: 10px;
+
+  align-items: center;
+}
+
+.tip-logo {
+  color: white;
+  background-color: #50402b;
+  padding: 40px;
+
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  align-items: center;
+
+  font-size: 50px;
+  text-align: center;
+}
+
+.tip-emo {
+  font-size: 40px;
+}
+
+.tip-content h2 {
+  margin-bottom: 15px;
+}
+
+.tip-content p span {
+  color: #ff0000;
+}
+
+/* ------------------------------------------------------------------------- */
+/*                               Responsive                                  */
+/* ------------------------------------------------------------------------- */
+@media (max-width:1200px) {
+  .container {
+    background-color: #ff91c5;
+  }
+
+  .main-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px 22px;
+    gap: 15px;
+  }
+
+  .right-sidebar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
+
+@media (max-width:992px) {
+  .container {
+    background-color: #91e5ff;
+  }
+  .right-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tip-emo {
+    display: none;
+  }
+
+  .tip-box {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .hero-photo img {
+    width: 100%;
+    height: auto;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+  }
+  .body-grid{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:768px) {
+  .container {
+    background-color: #fffa91;
+  }
+
+  .right-sidebar {
+    grid-template-columns: 1fr;
+  }
+
+  .card-body-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tip-emo {
+    display: none;
+  }
+
+  .tip-box {
+    grid-template-columns: 90px 1fr;
+  }
+
+  .hero-photo img {
+    width: 100%;
+    height: auto;
+  }
+  .hero{
+    display: flex;
+    flex-direction: column;
+  }
+  .body-grid{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
