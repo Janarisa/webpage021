@@ -468,16 +468,19 @@ body {
 .tip-logo {
   color: white;
   background-color: #50402b;
-  padding: 40px;
-
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  align-items: center;
-
   font-size: 50px;
-  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  
+  box-sizing: border-box; 
 }
+
 
 .tip-emo {
   font-size: 40px;

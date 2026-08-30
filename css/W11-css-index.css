@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mitr";
+    background-color: rgb(242, 254, 254);
+    color: rgb(49, 46, 42);
+    line-height: 1.5;
+    font-size: 20px;
+
+    padding: 20px 50px;
+}
+
+html {
+    scroll-behavior: smooth;
+    /*เลื่อนหน้าจอแบบนุ่มนวล ให้ใช้แยกออกมาข้างนอกจากbody*/
+    line-height: 1.5;
+}
+
+h1 {
+    color: rgb(255, 35, 120);
+    text-align: center;
+}
+
+h2 {
+    color: rgb(255, 35, 120);
+}
+
+pre {
+    background-color: rgb(222, 213, 247);
+    padding: 10px;
+    border-left: 8px solid #968484;
+
+    white-space: pre-wrap;
+    font-size: 16px;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 4px #5a4040;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    /*text-decoration: underline; จิ้มแล้วมีเส้นใต้*/
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.text-center{
+    text-align: center;
+    background-color: #bdf3f8;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #5a4040;
+    margin-top: 20px;
+    padding: 20px;
+}
+/*class -> . อยู่ด้านหน้า*/
+/* id -> # อยู่ด้านหน้า */
+
+/* ---------------------------Head---------------------------------- */
+#top {
+    background-color: #bdf3f8;
+    padding: 20px 0px;
+    font-size: 40px;
+
+    border-radius: 15px;
+    box-shadow: 0 4px 8px #5a4040;
+    margin-bottom: 20px;
+}
+
+.topics {
+    padding: 0 50px;
+}
