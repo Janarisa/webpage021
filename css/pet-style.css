@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* font-size: 16px; */
+
+}
+
+body {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: "Mitr";
+    line-height: 1.6;
+    color: var(--text-color);
+
+    background-color: linear-gradient(135deg,#c9c9ff 0%,#b6b6ff 50%,#9d9dff 100%);
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+:root {
+    /* สีหลักของเว็บ */
+    --primary-color: #7aedf5;
+    --primary-dark-color: #0b2552;
+    --secondary-color: #9666ff;
+    --secondary-dark-color: #48217e;
+
+    /* สีข้อความ */s
+    --text-color: black;
+    --text-mute-color: #838282;
+    --text-nav-color: #383838;
+    --text-light-color: white;
+
+    /* สีพื้น */
+    --background-btn-color: #7aedf5;
+    --background-footer-color: black;
+
+    /* สีเงา */
+    --header-shadow: 0 4px 8px #c3c3c3;
+    --card-shadow: 0 4px 8px #939393;
+
+    /* สีขอบ */
+    --border-color: #5d5d5d;
+}
+
+/* ------------------------------------
+                Header
+---------------------------------------*/
+.header {
+    border-color: var(--border-color);
+    background-color: #fffff3ba;
+    box-shadow: var(--header-shadow);
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    backdrop-filter: blur(10px);
+}
+
+.header-content {
+    text-align: center;
+    padding-block: 1.5rem;
+    /* ใช้งานแทน pixel สำหรับที่ไม่ใช่ค่าตายตัว*/
+}
+
+.header-title {
+    color: var(--primary-color);
+    font-size: 3rem, 5vw, 4rem;
+    line-height: 1.2;
+    margin-bottom: 0.25rem;
+}
+
+.header-subtitle {
+    color: var(--text-mute-color);
+}
+
+/* ------------------------------------
+                Nav
+---------------------------------------*/
+nav {
+    padding-block: 2rem;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-nav-color);
+    padding: 0.65rem 1.2rem;
+
+    box-shadow: var(--card-shadow);
+
+    border-radius: 999px;
+    margin-right: 0.5rem;
+
+    transition: transform 0.5s;
+
+    display: inline-block;
+}
+
+nav a:hover {
+    transform: translateY(-10px);
+}
+
+nav a.active {
+    background-color: var(--background-btn-color);
+    color: var(--text-light-color);
+}
+
+/* ------------------------------------
+                Main
+---------------------------------------*/
+.page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 2rem;
+}
+
+.pet-card {
+    border: var(--border-color);
+    box-shadow: var(--card-shadow);
+
+    border-radius: 25px;
+    overflow: hidden;
+
+    transition: transform 0.5s;
+}
+.pet-card:hover{
+    transform: translateY(-5px);
+    box-shadow: var(--header-shadow);
+}
+
+.pet-card img {
+    height: 16rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.pet-content {
+    padding: 1.25rem;
+}
+.pet-content h2{
+    color: var(--primary-dark-color);
+}
+
+.breed {
+    color: var(--text-mute-color);
+}
+
+/* ------------------------------------
+                Footer
+---------------------------------------*/
+footer{
+    background-color: var(--primary-dark-color);
+    color: var(--text-light-color);
+    text-align: center;
+    padding-block: 1rem;
+    margin-top: 1rem;
+}
+
+
+/* ------------------------------------
+                Responsive
+---------------------------------------*/
