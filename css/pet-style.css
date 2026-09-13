@@ -16,10 +16,10 @@ body {
     line-height: 1.6;
     color: var(--text-color);
 
-    background-color: linear-gradient(135deg,#c9c9ff 0%,#b6b6ff 50%,#9d9dff 100%);
+    background-color: linear-gradient(135deg, #c9c9ff 0%, #b6b6ff 50%, #9d9dff 100%);
 }
 
-.container {
+.container ,.section{
     max-width: 1320px;
     margin: 0 auto;
 }
@@ -31,15 +31,24 @@ body {
     --secondary-color: #9666ff;
     --secondary-dark-color: #48217e;
 
-    /* สีข้อความ */s
+    /* สีข้อความ */
     --text-color: black;
     --text-mute-color: #838282;
     --text-nav-color: #383838;
     --text-light-color: white;
+    --text-blue : #182946;
+    --text-purple : #3a1846;
+    --text-green : #18461e;
+    --text-orange : #c14000;
 
     /* สีพื้น */
     --background-btn-color: #7aedf5;
     --background-footer-color: black;
+    --background-blue: #cfebff;
+    --background-purple: #e2dbff;
+    --background-green: #d3ffe7;
+    --background-orange: #ffded3;
+
 
     /* สีเงา */
     --header-shadow: 0 4px 8px #c3c3c3;
@@ -137,7 +146,8 @@ nav a.active {
 
     transition: transform 0.5s;
 }
-.pet-card:hover{
+
+.pet-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--header-shadow);
 }
@@ -151,7 +161,8 @@ nav a.active {
 .pet-content {
     padding: 1.25rem;
 }
-.pet-content h2{
+
+.pet-content h2 {
     color: var(--primary-dark-color);
 }
 
@@ -160,9 +171,68 @@ nav a.active {
 }
 
 /* ------------------------------------
+                Section
+---------------------------------------*/
+.info-section {
+    border: var(--border-color);
+    box-shadow: var(--card-shadow);
+
+    border-radius: 25px;
+    
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.info-title {
+    text-align: center;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+
+    margin: 1rem;
+}
+
+.info-card {
+    border: var(--border-color);
+    border-radius: 25px;
+
+    padding: 1.25rem;
+}
+
+/* card color+text ==section== */
+.info-blue{
+    background-color: var(--background-blue);
+}
+.info-blue h3 {
+    color: var(--text-blue);
+}
+.info-green{
+    background-color: var(--background-green);
+}
+.info-green h3 {
+    color: var(--text-green);
+}
+.info-purple{
+    background-color: var(--background-purple);
+}
+.info-purple h3 {
+    color: var(--text-purple);
+}
+.info-orange{
+    background-color: var(--background-orange);
+}
+.info-orange h3 {
+    color: var(--text-orange);
+}
+
+
+/* ------------------------------------
                 Footer
 ---------------------------------------*/
-footer{
+footer {
     background-color: var(--primary-dark-color);
     color: var(--text-light-color);
     text-align: center;
