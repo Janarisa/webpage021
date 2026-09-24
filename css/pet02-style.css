@@ -39,7 +39,10 @@ body {
     --text-blue : #182946;
     --text-purple : #3a1846;
     --text-green : #18461e;
+    --text-light-green : #1a8128;
     --text-orange : #c14000;
+    --text-red : #c10000;
+
 
     /* สีพื้น */
     --background-btn-color: #7aedf5;
@@ -209,7 +212,8 @@ nav a.active {
 
 .pet-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,300px),1fr));
 
     gap: 2rem;
 }
@@ -247,6 +251,63 @@ nav a.active {
     color: var(--text-mute-color);
 }
 
+
+/* --------btn show-hide description-------- */
+.pet-info{
+    list-style: none;
+    margin-block: 1rem;
+}
+.pet-info li{
+    margin-bottom: 0.25rem
+}
+.info-lifespan{color: var(--text-red);}
+.info-size{color: var(--text-blue);}
+.info-temperament{color: var(--text-light-green);}
+
+.pet-details summary{
+    list-style: none;
+}
+.pet-btn{
+    background-color: var(--background-btn-color);
+    padding: 0.5rem 1rem;
+    text-align: center;
+
+    border-radius: 0.5rem;
+    box-shadow: var(--card-shadow);
+
+    color: var(--text-light-color);
+    cursor: pointer;
+
+    transition: 0.5s;
+}
+.pet-btn:hover{
+    background-color: var(--primary-dark-color);
+    transform: translateY(-5px);
+}
+
+.hide-detail{
+    display: none;
+}
+.pet-details[open] .hide-detail {
+    display: inline;
+}
+.pet-details[open] .show-detail {
+    display: none;
+}
+
+.pet-details-body{
+    margin-top: 0.8rem;
+    animation: appear 0.5s ease-out;
+}
+.pet-details-body section + section{
+    margin-top: 0.8rem;
+}
+@keyframes appear{
+    from {opacity: 0; transform: translateY(-30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+
 /* ------------------------------------
                 Section
 ---------------------------------------*/
@@ -266,7 +327,9 @@ nav a.active {
 
 .info-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); */
+    grid-template-columns: repeat(auto-fit,minmax(min(100%,250px),1fr));
     gap: 2rem;
 
     margin: 1rem;
@@ -305,6 +368,60 @@ nav a.active {
     color: var(--text-orange);
 }
 
+/* ------------------------------------
+            Table
+---------------------------------------*/
+.pet-table{
+    border-collapse: collapse;
+    margin-top: 1rem;
+    width: 100%;
+    table-layout: fixed;
+    
+}
+.pet-table td,.pet-table th{
+    border:1px solid #464646;
+    padding: 1rem;
+    vertical-align: top;
+    overflow-wrap: break-word;
+}
+.pet-table caption{
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-color);
+    caption-side: top;
+
+
+    /* เอาcaption ไว้ข้างล่าง */
+    /* caption-side: bottom; */
+}
+.pet-table thead th{
+    background-color: var(--primary-dark-color);
+    color: var(--text-light-color);
+}
+.pet-table tbody th{
+    background-color: var(--background-mute-color);
+    text-align: left;
+
+    white-space: nowrap;
+
+    /* overflow-wrap: break-word; */
+}
+/* .pet-table thead th:nth-child(1){width: 200px;} */
+/* .pet-table thead th:nth-child(2){width: 300px;} */
+.pet-table thead th:nth-child(3){width: 200px;}
+/* .pet-table thead th:nth-child(4){width: 300px;} */
+.pet-table thead th:nth-child(5){width: 200px;}
+
+.pet-table tbody tr:nth-child(even){
+    background-color: var(--background-mute-color);
+}
+.pet-table tbody tr:hover{
+    background-color: var(--background-orange);
+}
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
 /* ------------------------------------
             Form Radio Button
 ---------------------------------------*/
@@ -385,3 +502,31 @@ footer {
 /* ------------------------------------
                 Responsive
 ---------------------------------------*/
+
+/* tablet */
+@media (max-width:992px) {
+    .pet-grid{
+        /* grid-template-columns: repeat(2,1fr); */
+    }
+}
+/* mobile */
+@media (max-width:768px) {
+    .pet-grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .category-nav label{
+        display: block;
+        margin: 0.4rem 3rem;
+        border-radius: 1rem;
+    }
+    .category-nav label:hover{
+        transform: translateY(-5px);
+    }
+    .info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+
+    margin: 1rem;
+}
+}
